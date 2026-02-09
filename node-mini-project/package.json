@@ -1,0 +1,9 @@
+{
+  "name": "node-mini-project",
+  "private": true,
+  "scripts": {
+    "install:all": "npm i --prefix server || true && npm i --prefix client || true && npm i",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "node server.js"
+  }
+}
